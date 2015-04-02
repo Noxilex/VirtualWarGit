@@ -21,7 +21,6 @@ abstract public class Robot {
 	 * @return
 	 */
 	public boolean estSurBase(){
-		return cellule.estBase() != 0;
 	}
 	
 	/**
@@ -30,14 +29,12 @@ abstract public class Robot {
 	 * @param Y
 	 */
 	public void setCoordonnees(int X, int Y){
-		cellule = new Cellule(X,Y);
 	}
 	/**
 	 * 
 	 * @return
 	 */
 	public Coordonnees getCoordonnees(){
-		return cellule.getCoordonnees();
 	}
 	/**
 	 * Renvoie true si le robot peut tirer: a assez d'énergie
